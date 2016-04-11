@@ -1,0 +1,80 @@
+[{
+	"Timestamps" : "2015-03-01T03:35:53",
+	"AgentSessionId" : "1000000008",
+	"CustomerSessionId" : "1000000001",
+	"ModuleName" : "Transaction",
+	"LocationId" : "null",
+	"LocationName" : "Carver",
+    "MethodName": "CalculateTransactionLimits",
+    "Message": "End CalculateTransactionLimits - MGI.Biz.Compliance.Impl.List"
+},
+{
+	"Timestamps" : "2015-10-23T03:35:53",
+	"AgentSessionId" : "1000000008",
+	"CustomerSessionId" : "1000000002",
+	"ModuleName" : "Transaction",
+	"LocationId" : "null",
+	"LocationName" : "Synovus",
+    "MethodName": "SendTransactionLimits",
+    "Message": "End SendTransactionLimits - MGI.Biz.Compliance.Impl.List"
+},
+{
+	"Timestamps" : "2015-07-09T03:35:53",
+	"AgentSessionId" : "1000000008",
+	"CustomerSessionId" : "1000000003",
+	"ModuleName" : "Transaction",
+	"LocationId" : "null",
+	"LocationName" : "TCF",
+    "MethodName": "CalculateTransactionLimits",
+    "Message": "End CalculateTransactionLimits - MGI.Biz.Compliance.Impl.List"
+},
+{
+	"Timestamps" : "2015-09-09T03:35:53",
+	"AgentSessionId" : "1000000008",
+	"CustomerSessionId" : "1000000004",
+	"ModuleName" : "Transaction",
+	"LocationId" : "null",
+	"LocationName" : "Carver",
+    "MethodName": "CalculateTransactionLimits",
+    "Message": "End CalculateTransactionLimits - MGI.Biz.Compliance.Impl.List"
+},
+{
+	"Timestamps" : "2016-04-14T03:35:53",
+	"AgentSessionId" : "1000000008",
+	"CustomerSessionId" : "1000000005",
+	"ModuleName" : "Transaction",
+	"LocationId" : "null",
+	"LocationName" : "Carver",
+    "MethodName": "CalculateTransactionLimits",
+    "Message": "End CalculateTransactionLimits - MGI.Biz.Compliance.Impl.List"
+},
+{
+	"Timestamps" : "2016-01-20T03:35:53",
+	"AgentSessionId" : "1000000008",
+	"CustomerSessionId" : "1000000006",
+	"ModuleName" : "Transaction",
+	"LocationId" : "null",
+	"LocationName" : "TCF",
+    "MethodName": "CalculateTransactionLimits",
+    "Message": "End CalculateTransactionLimits - MGI.Biz.Compliance.Impl.List"
+},
+{
+	"Timestamps" : "2016-03-13T03:35:53",
+	"AgentSessionId" : "1000000008",
+	"CustomerSessionId" : "1000000007",
+	"ModuleName" : "Transaction",
+	"LocationId" : "null",
+	"LocationName" : "TCF",
+    "MethodName": "CalculateTransactionLimits",
+    "Message": "End CalculateTransactionLimits - MGI.Biz.Compliance.Impl.List"
+},
+{
+	"Timestamps" : "2016-01-01T03:35:53",
+	"AgentSessionId" : "1000000008",
+	"CustomerSessionId" : "1000000008",
+	"ModuleName" : "Transaction",
+	"LocationId" : "null",
+	"LocationName" : "Synovus",
+    "MethodName": "CalculateTransactionLimits",
+    "Message": "End CalculateTransactionLimits - MGI.Biz.Compliance.Impl.List"
+}]

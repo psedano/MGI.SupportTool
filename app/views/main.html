@@ -1,0 +1,62 @@
+<form ng-submit="getDataFromDB()">
+    <!--<div class="form-group">
+      <input type="text" ng-model="query" class="form-control" placeholder="Search..." ng-required="true">
+    </div>-->
+    <div class="row">
+        <div class="col-md-6">
+            <p class="input-group">
+                <input type="text" ng-model="startDate" class="form-control" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" placeholder="Start Date...">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+                </span>
+            </p>
+        </div>
+        <div class="col-md-6">
+               <p class="input-group">
+                   <input type="text" ng-model="endDate" class="form-control" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" placeholder="End Date...">    
+                   <span class="input-group-btn">
+                       <button type="button" class="btn btn-default" ng-click="open2()"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+               </p>
+        </div>
+     </div>
+     <p class="input-group">
+         <input type="submit" class="btn btn-primary" value="Search!">
+     </p>
+</form>
+<div ng-show="showResults">
+    <p class="form-group">
+    <input type="text" ng-model="txtFilter" class="form-control" placeholder="Filter">
+</p>
+<table class="table table-hover" width="100%">
+    <thead>
+        <tr>
+        <th>Agent Session ID</th>
+        <th>Customer Session ID</th>
+        <!--<th>Module Name</th>-->
+        <th>Location Name</th>
+        <!--<th>Alloy Layer</th>   -->
+        <th>Method Name</th> 
+        <th>Message</th> 
+    </tr>
+    </thead>  
+    <tbody>
+        <tr ng-repeat="result in results | searchFor: dateRange | filter: txtFilter">
+        <td>{{result.AgentSessionId}}</td>
+        <td>{{result.CustomerSessionId}}</td>
+        <!--<td>{{result.ModuleName}}</td>-->
+        <td>{{result.LocationName}}</td>
+        <!--<td>{{result.AlloyLayerName}}</td>-->
+        <td>{{result.MethodName}}</td>
+        <td>{{result.Message}}
+            <button class="btn btn-default" ngclipboard data-clipboard-text="{{result}}">
+                <span class="glyphicon glyphicon glyphicon-copy" aria-hidden="true"></span>
+            </button>
+            
+        </td>
+    </tr>  
+    </tbody>
+</table>
+</div>
+
+
